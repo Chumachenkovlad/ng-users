@@ -1,0 +1,13 @@
+<mat-card *ngIf="user">
+  <mat-card-header>
+    <mat-card-title>{{ user.name }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-toolbar>
+      <mat-toolbar-row *ngFor="let attr of attrs">
+        <span class="title">{{ attr | titlecase }}</span>
+        <span class="details">{{ user[attr] }}</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </mat-card-content>
+</mat-card>

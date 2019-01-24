@@ -16,6 +16,15 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@ng-users/state": [
+        "libs/state/src/index.ts"
+      ],
+      "@ng-users/api": [
+        "libs/api/src/index.ts"
+      ],
+      "@ng-users/pages/users": [
+        "libs/pages/users/src/index.ts"
+      ]
     }
   },
   "exclude": [
